@@ -80,9 +80,9 @@ pass_obstacle_sounds = (new Howl(urls: ["sound/#{fname}"], volume: 0.6) for fnam
 	'pickup.wav'
 ])
 
-canvas = document.createElement 'canvas'
-document.body.appendChild canvas
-ctx = canvas.getContext '2d'
+#canvas = document.createElement 'canvas'
+#document.body.appendChild canvas
+#ctx = canvas.getContext '2d'
 canvas.width = 640
 canvas.height = 480
 
@@ -307,6 +307,7 @@ game_start = ->
 		ctx.fillStyle = "hsla(160, 50%, 60%, 0.3)"
 		ctx.fillRect(0, 0, canvas.width, canvas.height)
 		
+		display()
 		requestAnimationFrame animate
 	
 	###flap = -> bird.flap()
