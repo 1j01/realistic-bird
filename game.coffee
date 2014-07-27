@@ -247,9 +247,12 @@ game_start = ->
 		if location.hash.match 'ai'
 			bird.ai()
 		
-		for e in entities
+		for e, i in entities by -1
 			e.draw()
 			e.update?()
+			if e.x + 250 < t*SPEED
+				entities.splice i, 1
+		
 		
 		ctx.restore()
 		

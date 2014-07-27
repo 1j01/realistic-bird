@@ -6,7 +6,8 @@ A [#flappyjam](http://itch.io/jam/flappyjam) game.
 Todo
 ====
 * Title screen
-* Destroy offscreen pipes (uh dude? c'mon?)
+* Single bounce safety?
+* Save best score to localStorage
 * Retro screen effect
 
 Huh
